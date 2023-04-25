@@ -1,0 +1,14 @@
+.container {
+  width: 100%;
+  height: 100vh;
+  background-color: var(--bs-body);
+}
+
+.login {
+  height: 345px;
+  width: 300px;
+
+   &-title {
+    color: var(--neutral-darkest);
+   }
+ }
