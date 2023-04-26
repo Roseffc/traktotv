@@ -11,6 +11,7 @@
   --Neutral-light: #E4EBFB;
   --brand-green: #1DC763;
   --neutral-darkest: #04183E;
+  --danger: #dc3545;
 }
 
 body {
@@ -25,6 +26,10 @@ body {
 
 .text-center {
   text-align: center;
+}
+
+.text-danger {
+  color: var(--danger);
 }
 
 .d-flex {
@@ -108,6 +113,10 @@ body {
   &:focus-visible {
     outline: 3px solid var(--brand-light);
   }
+}
+
+.form-control.ng-invalid.ng-touched {
+  outline: solid 1px var(--danger);
 }
 
 .w-100 {

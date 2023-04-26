@@ -7,19 +7,40 @@
         </svg>
     </div>
     <h1 class="login-title fs-20 fw-700">Olá, faça login em sua conta.</h1>
-    <form autocomplete="off">
+    <form [formGroup]="formLogin" autocomplete="off">
       <div class="">
         <label for="email" class="form-label fs-12">E-mail</label>
-        <input type="email" class="form-control w-100" id="email" aria-describedby="e-mail">
+        <input
+          type="email"
+          class="form-control w-100"
+          id="email"
+          aria-describedby="e-mail"
+          formControlName="email"
+        >
+        <span class="text-danger fs-12" *ngIf="formLogin.get('email')?.errors?.['required'] && (formLogin.get('email')?.dirty || formLogin.get('email')?.touched)">Campo obrigatório</span>
+        <span class="text-danger fs-12" *ngIf="formLogin.get('email')?.errors?.['email'] && (formLogin.get('email')?.dirty || formLogin.get('email')?.touched) " >E-mail inválido</span>
       </div>
       <div class="mt-24">
-        <label for="senha" class="form-label fs-12">Senha</label>
-        <input type="senha" class="form-control w-100" id="senha" aria-describedby="senha">
+        <label for="password" class="form-label fs-12">Senha</label>
+        <input
+          type="password"
+          class="form-control w-100"
+          id="password"
+          aria-describedby="password"
+          formControlName="password"
+          >
+         <span class="text-danger fs-12" *ngIf="formLogin.get('password')?.invalid && (formLogin.get('password')?.dirty || formLogin.get('password')?.touched)">Campo obrigatório</span>
       </div>
-
-      <button type="submit" class="btn btn-brand--green mt-24">Entrar</button>
+      <button
+        type="submit"
+        class="btn btn-brand--green mt-24"
+        (click)="login()"
+        [disabled]="formLogin.invalid"
+        >Entrar
+      </button>
     </form>
    </div>
-</section>
+  </section>
+
 
 
