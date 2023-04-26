@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { FormBuilder, FormGroup, Validators } from '@angular/forms';
+import { TraktoService } from '../services/trakto.service';
 
 @Component({
   selector: 'app-login',
@@ -10,6 +11,7 @@ export class LoginComponent implements OnInit {
   formLogin!: FormGroup;
 
   constructor(
+    private traktoService: TraktoService,
     private formBuider: FormBuilder
   ) {}
 
@@ -26,8 +28,9 @@ export class LoginComponent implements OnInit {
 
   login(){
     const dados=this.formLogin.value;
-    console.log(dados)
+    this.traktoService.login(dados)
   }
+
 
 
 
