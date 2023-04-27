@@ -1,0 +1,30 @@
+.header {
+  height: 76px;
+  border-bottom: solid 1px #dedede;
+
+
+ &__logo {
+  // background-color: aquamarine;
+ }
+
+ &__button {
+  margin-left: 15px;
+  color: var(--color-btn);
+
+ }
+
+ &__content {
+  // background-color: antiquewhite;
+  }
+
+ &__text {
+  margin-left: 11px;
+  color: var(--color-btn);
+ }
+
+ &__imgcont {
+  padding: 0 65px;
+ }
+
+
+}

@@ -7,11 +7,19 @@ import { LoginComponent } from './login/login.component';
 import { ReactiveFormsModule } from '@angular/forms';
 import { TraktoService } from './services/trakto.service';
 import { HttpClientModule } from '@angular/common/http';
+import { HomeComponent } from './pages/home/home.component';
+import { HeaderComponent } from './header/header.component';
+import { MaterialDidaticoComponent } from './pages/material-didatico/material-didatico.component';
+import { CardMenuComponent } from './pages/home/card-menu/card-menu.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-      LoginComponent
+      LoginComponent,
+      HomeComponent,
+      HeaderComponent,
+      MaterialDidaticoComponent,
+      CardMenuComponent
    ],
   imports: [
     BrowserModule,

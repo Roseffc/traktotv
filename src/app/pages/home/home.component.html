@@ -1,0 +1,8 @@
+<app-header [bgColor]="'black'" [isButton]="true" [logoColor]="'#fff'"></app-header>
+<section class="home d-flex justify-content-between container">
+ <app-card-menu
+  [title]="item?.title"
+  [imgSrc]="item?.img"
+  *ngFor="let item of listMenu"></app-card-menu>
+
+</section>
