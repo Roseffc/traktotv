@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { TraktoService } from 'src/app/services/trakto.service';
 
 @Component({
   selector: 'app-material-didatico',
@@ -7,9 +8,26 @@ import { Component, OnInit } from '@angular/core';
 })
 export class MaterialDidaticoComponent implements OnInit {
 
-  constructor() { }
+  documents = [];
+
+  constructor(private traktoService: TraktoService) { }
 
   ngOnInit() {
+    this.getDocuments()
   }
+
+  getDocuments(){
+    this.traktoService.getDocument()
+      .subscribe({
+        next: (result: any) => {
+          this.documents = result.data;
+         console.log(result)
+        },
+        error: (error) => {
+          console.log(error);
+        },
+      });
+  }
+
 
 }

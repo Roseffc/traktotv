@@ -1,0 +1,10 @@
+.conteudo {
+  border-radius: 4px;
+  margin-top: 46.6px;
+  flex-direction: column;
+  gap: 20px;
+
+  &__imgs {
+    flex-wrap: wrap;
+  }
+}

@@ -1,4 +1,5 @@
-<div class="card text-center" >
+<div class="card text-center" [routerLink]="['/material-didatico']" routerLinkActive="router-link-active" >
   <h1 class=" card__text font-family--poppins fs-48 text-center">{{ title }}</h1>
+  <div class="card__dash" [ngClass]="[dashClass]"></div>
   <img class="align-items-center" [src]="imgSrc" alt="">
 </div>

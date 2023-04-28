@@ -4,7 +4,7 @@
 
 export const environment = {
   production: false,
-  traktoUrl: "https://api.trakto.io/auth/signin"
+  traktoUrl: "https://api.trakto.io"
 };
 
 /*

@@ -10,6 +10,8 @@ export class CardMenuComponent implements OnInit {
 
   @Input() title:string | undefined = '';
   @Input() imgSrc:string | undefined = '';
+  @Input() dashClass:string | undefined = '';
+
 
   constructor() { }
 

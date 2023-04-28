@@ -1,0 +1,15 @@
+<div class="conteudo container d-flex justify-content-between">
+  <div class="d-flex justify-content-between align-items-center">
+    <div class="conteudo__title">
+      <p>Semana 06/02 até 28/02</p>
+      <h6>Material didático</h6>
+      <p>Acesse suas últimas apresentações de aula.</p>
+    </div>
+    <div>
+      <button class="btn btn-outline">Ver todo conteúdo</button>
+    </div>
+  </div>
+  <div class="conteudo__imgs d-flex justify-content-between">
+    <app-card-itens [document]="item" *ngFor="let item of documents"></app-card-itens>
+  </div>
+</div>

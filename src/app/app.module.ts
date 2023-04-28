@@ -11,6 +11,8 @@ import { HomeComponent } from './pages/home/home.component';
 import { HeaderComponent } from './header/header.component';
 import { MaterialDidaticoComponent } from './pages/material-didatico/material-didatico.component';
 import { CardMenuComponent } from './pages/home/card-menu/card-menu.component';
+import { CardConteudosComponent } from './pages/material-didatico/card-conteudos/card-conteudos.component';
+import { CardItensComponent } from './pages/material-didatico/card-itens/card-itens.component';
 
 @NgModule({
   declarations: [
@@ -19,7 +21,9 @@ import { CardMenuComponent } from './pages/home/card-menu/card-menu.component';
       HomeComponent,
       HeaderComponent,
       MaterialDidaticoComponent,
-      CardMenuComponent
+      CardMenuComponent,
+      CardConteudosComponent,
+      CardItensComponent
    ],
   imports: [
     BrowserModule,

@@ -1,8 +1,9 @@
-<app-header [bgColor]="'black'" [isButton]="true" [logoColor]="'#fff'"></app-header>
+<app-header [bgColor]="'black'" [isButton]="false" [logoColor]="'#fff'"></app-header>
 <section class="home d-flex justify-content-between container">
  <app-card-menu
   [title]="item?.title"
   [imgSrc]="item?.img"
+  [dashClass]="item?.dash"
   *ngFor="let item of listMenu"></app-card-menu>
 
 </section>

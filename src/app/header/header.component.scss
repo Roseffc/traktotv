@@ -1,8 +1,6 @@
 .header {
   height: 76px;
-  border-bottom: solid 1px #dedede;
-
-
+ 
  &__logo {
   // background-color: aquamarine;
  }
@@ -10,6 +8,9 @@
  &__button {
   margin-left: 15px;
   color: var(--color-btn);
+  &-text {
+    margin-left: 10.5px;
+  }
 
  }
 

@@ -2,6 +2,7 @@
 
 
 :root {
+  --bg-body-cyan1: #F5F5F5;
   --bs-body: #EFF2F9;
   --bs-body-color: #adb5bd;
   --bs-body-bg: #212529;
@@ -11,10 +12,13 @@
   --Neutral-light: #E4EBFB;
   --brand-green: #1DC763;
   --neutral-darkest: #04183E;
-  --danger: #dc3545;
   --color-primary: #252323;
   --color-btn:  #7183A6;
-  --color--bgh: #FFFFFF;
+  --danger: #FF0000;
+  --color-white: #FFFFFF;
+  --color-blue: #4173CD;
+  --color-purple: #F6B5FF;
+  ;
 
 }
 
@@ -32,6 +36,33 @@ body {
   text-align: center;
 }
 
+.text-danger {
+  color: var(--danger);
+}
+.text-green {
+  color: var(--brand-green);
+}
+.text-blue {
+  color: var(--color-blue);
+}
+.text-purple {
+  color: var(--color-purple);
+}
+.bg-danger {
+  background-color: var(--danger);
+}
+.bg-green {
+  background-color: var(--brand-green);
+}
+.bg-blue {
+  background-color: var(--color-blue);
+}
+.bg-purple {
+  background-color: var(--color-purple);
+}
+.bg-cyan {
+  background-color: var(--bg-body-cyan1);
+}
 .text-danger {
   color: var(--danger);
 }
@@ -158,6 +189,14 @@ body {
   width: 100%;
   font-size: 14px;
   border-radius: 4px;
+  display: flex;
+  justify-content: center;
+  box-sizing: border-box;
+  cursor: pointer;
+
+  &:hover {
+    opacity: 0.7;
+  }
 
   &-brand--green {
     background-color: var(--brand-green);
@@ -168,14 +207,13 @@ body {
     background-color: var(--brand-red);
   }
 
-  .btn--outline {
+  &-outline {
     border: 1px solid var(--color-btn);
-    width: 254px;
-    height: 56px;
-    border-radius: 8px;
-    background-color: var(--color--bgh);
+    background-color: transparent;
+    height: 57px;
   }
 }
+
 .mt-24 {
   margin-top: 24px;
 }

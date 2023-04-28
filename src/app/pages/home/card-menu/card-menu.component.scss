@@ -1,11 +1,21 @@
 .card {
-  // background-color: aqua;
-  Width: 431px;
+   Width: 431px;
+
+   &:hover{
+    cursor: pointer;
+    opacity: 0.7;
+   }
 
   &__text {
     margin: 0;
     text-align: center;
-    color: var(--color--bgh);
+    color: var(--color-white);
+  }
+  &__dash {
+    width: 28px;
+    height: 4px;
+    margin: 0 auto;
+    margin-bottom: 32px;
   }
 
 }
