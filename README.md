@@ -16,5 +16,5 @@ ng serve
 Abrir navegador: http://localhost:4200
 ```
 
-## <p align="center">![TraktoTv](./src/assets/login_print.png)<br>Login</p>
+## <p align="center">![TraktoTv](./src/assets/images/login_print.png)<br>Login</p>
 
